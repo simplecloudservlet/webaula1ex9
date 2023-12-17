@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="bzs">
+<head>
+<meta charset="UTF-8">
+<title>Comércio Eletrônico</title>
+<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+</head>
+<body>
+
+	<h1 class="negrito">webaula1ex9</h1>
+
+	<!-- Tabela -->
+	<h3>Preço da Venda</h3>
+	<table id="tabela">
+		<tr>
+			<th>Produto</th>
+			<th>Valor</th>
+		</tr>
+		<tr>
+			<th>Régua</th>
+			<th>1,00</th>
+		</tr>
+		<tr>
+			<th>Borracha</th>
+			<th>2,00</th>
+		</tr>
+		<tr>
+			<th>Lápis</th>
+			<th>3,00</th>
+		</tr>
+	</table>
+
+	<!-- input radio -->
+	<form action="pagina3.html" method="post" style="border: outset">
+		<h3 id="destacar">Forma de pagamento:</h3>
+		<input type="radio" name="pix" value="pix" checked />PIX<br> <input
+			type="radio" name="cartao" value="cartao" />Cartão<br> <input
+			type="radio" name="dinheiro" value="dinheiro" />Dinheiro<br>
+
+		<!-- input checkbox -->
+		<h3>Recibo:</h3>
+		<input type="checkbox" name="papel" value="papel" />Papel<br> <input
+			type="checkbox" name="cartao" value="cartao" />Cartao<br> <input
+			type="checkbox" name="dinheiro" value="dinheiro" />Dinheiro<br>
+
+		<!-- Textarea -->
+		<h3>Feedback:</h3>
+		<textarea rows="3" cols="50" name="mensagem">Digite a sua mensagem</textarea>
+		
+		<!-- Select -->
+		<h3>Nota:</h3>
+		<select name="nota">
+			<option value="0">Bom
+			<option value="1">Médio
+			<option value="2">Ótimo
+		</select>
+		
+		<input type="submit" value="Confirmar"/>
+	</form>
+
+
+	<!-- Formulario -->
+	<h3>HTTP GET</h3>
+	<form action="pagina2.html" method="get" style="border: outset">
+		Nome: <input type="text" name="nome" required autofocus /> <br>
+		Senha: <input type="password" name="senha" required /> <br> <input
+			type="submit" /> <input type="reset" />
+	</form>
+
+	<h3>HTTP POST</h3>
+	<form action="pagina2.html" method="post" style="border: outset">
+		Nome: <input type="text" name="nome" required autofocus /> <br>
+		Senha: <input type="password" name="senha" required /> <br> <input
+			type="submit" /> <input type="reset" />
+	</form>
+
+	<!-- Divisao de paragrafos: permite formatacao especifica do trecho -->
+	<!-- No cabecalho, <style> define o estilo do paragrafo-->
+	<p id="azul">Linha azul</p>
+	<p id="verde">Linha verde</p>
+
+	<!-- Listas -->
+	<h3>Lista de produtos</h3>
+	<ul>
+		<li>Régua</li>
+		<li>Borracha</li>
+		<li>Lápis</li>
+	</ul>
+
+	<!-- Listas numeradas -->
+	<h3>Lista de prioridades</h3>
+	<ol>
+		<li>Vender para o exterior</li>
+		<li>Atacado</li>
+		<li>Varejo</li>
+	</ol>
+
+
+	<figure>
+		<img src="img/vendas.png" width="100" height="50" alt="vendas">
+		<figcaption>
+			<p>Comércio Eletrônico.</p>
+		</figcaption>
+	</figure>
+
+	<a href="pagina2.html">Página 2</a>
+</body>
+</html>
