@@ -1,15 +1,24 @@
 @charset "UTF-8";
 
-/* Formata linha pares da tabela*/
+/* 
+th: table header (cabecalho)
+tr: table row
+td: table data
+*/
+
+/* Formata linha pares da tabela */
+/* nth-child(even): 'nth-child()' eh generico. Formata as linhas pares da tabela */
 tr:nth-child(even){
 	background-color: silver;
 }
 
-/* Formata linha impares */
+/* Formata itens impares */
+/* 'nth-child()' eh generico. Aqui, formata os itens da lista */
 li:nth-child(odd){
 	color: red;
 }
 
+/* Formata o cabecalho de uma tabela, quando o mouse passa por cima (hover)*/
 th:hover {
 	background-color: yellow;
 }
